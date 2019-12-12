@@ -1,0 +1,58 @@
+.topNav,
+.bottomNav {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px; 
+}
+
+
+.topNav {
+	background-color: #131313;
+	max-height: 32px;
+	font-size: 13px;
+	padding-right: 20px;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.topNav ul,
+.bottomNav ul {
+	display: flex;
+}
+
+.topNav li {
+margin-left: 12px; 
+line-height: 32px;
+}
+
+.bottomNav {
+	position: fixed;
+	color: #aaa;
+	height: 48px;
+	font-size: 14px;
+	letter-spacing: 0.04em;
+	font-weight: 500;
+	width: 100%;
+	box-shadow: 1px 0 20px rgba(59,55,59,0.2);
+}
+
+.bottomNav li {
+	margin: 18px 12px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
