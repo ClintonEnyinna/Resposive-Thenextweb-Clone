@@ -1,58 +1,77 @@
-.topNav,
-.bottomNav {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 20px; 
+a {
+  text-decoration: none;
 }
 
+.topNav,
+.bottomNav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+}
 
 .topNav {
-	background-color: #131313;
-	max-height: 32px;
-	font-size: 13px;
-	padding-right: 20px;
-	color: rgba(255, 255, 255, 0.6);
+  background-color: #131313;
+  max-height: 32px;
+  font-size: 13px;
+  padding-right: 20px;
+}
+
+.topNav a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bottomNav a {
+  color: #aaa;
 }
 
 .topNav ul,
 .bottomNav ul {
-	display: flex;
+  display: flex;
 }
 
 .topNav li {
-margin-left: 12px; 
-line-height: 32px;
+  margin-left: 12px;
+  line-height: 32px;
+}
+
+.topNav li a:hover {
+  color: white;
 }
 
 .bottomNav {
-	position: fixed;
-	color: #aaa;
-	height: 48px;
-	font-size: 14px;
-	letter-spacing: 0.04em;
-	font-weight: 500;
-	width: 100%;
-	box-shadow: 1px 0 20px rgba(59,55,59,0.2);
+  position: fixed;
+  height: 48px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  width: 100%;
+  box-shadow: 1px 0 20px rgba(59, 55, 59, 0.2);
 }
 
 .bottomNav li {
-	margin: 18px 12px 0;
+  margin: 18px 12px 0;
+}
+
+.bottomNav li a:hover {
+  color: #555;
+}
+
+.bottomNav button{
+	background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783');
+	background-position: -815px -816px;
+	width: 48px;
+	border: none;
+	background-color:transparent;
+	clip-path: circle(30%);	
+	border-left: 1px solid #ccc;
+}
+
+.bottomNav ul{
+	width: calc(100% - 48px);
+	border-right: 1px solid #ccc;
 }
 
 
+@media screen and (max-width: 1023px) {}
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1023px) {
-
-}
-
-@media screen and (max-width: 767px) {
-
-}
+@media screen and (max-width: 767px) {}
