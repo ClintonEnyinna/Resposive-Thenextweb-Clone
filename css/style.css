@@ -1,3 +1,12 @@
+* {
+  border: 2px solid black;
+}
+
+
+main{
+  padding-top: 56px;
+}
+
 a {
   text-decoration: none;
 }
@@ -10,6 +19,7 @@ a {
 }
 
 .topNav {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #131313;
   max-height: 32px;
   font-size: 13px;
@@ -39,6 +49,7 @@ a {
 }
 
 .bottomNav {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   position: fixed;
   height: 48px;
   font-size: 14px;
@@ -46,6 +57,7 @@ a {
   font-weight: 500;
   width: 100%;
   box-shadow: 1px 0 20px rgba(59, 55, 59, 0.2);
+  background-color: white;
 }
 
 .bottomNav li {
@@ -56,21 +68,41 @@ a {
   color: #555;
 }
 
-.bottomNav button{
-	background-image: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783');
-	background-position: -815px -816px;
-	width: 48px;
-	border: none;
-	background-color:transparent;
-	clip-path: circle(30%);	
-	border-left: 1px solid #ccc;
+.bottomNav button {
+  width: 48px;
+  border: none;
+  border-left: 1px solid #eee;
+  background-color: white;
 }
 
-.bottomNav ul{
-	width: calc(100% - 48px);
-	border-right: 1px solid #ccc;
+.search-icon {
+  width: 16px;
+  height: 16px;
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
 }
 
+.main-view {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  grid-gap: 8px;
+  height: 60vh;
+  padding: 0 8px 8px;
+}
+
+.view-item-1 {
+  background-color: red;
+}
+
+.view-item-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 8px;
+}
+
+.view-item-2 *{
+  background-color: green;
+}
 
 @media screen and (max-width: 1023px) {}
 
