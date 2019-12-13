@@ -87,12 +87,14 @@ a {
   grid-template-columns: 2fr 1fr;
   width: 100%;
   grid-gap: 8px;
-  height: 60vh;
+  height: 55vh;
   padding: 0 8px 8px;
+  color: white;
 }
 
 .view-item-1 {
-  background-color: red;
+  position: relative;
+  background: linear-gradient(to bottom right, rgba(255, 60, 1, 1), rgba(255, 66, 10, 0.6) 30%, rgba(14, 14, 14, 0.90) 70%, rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
 }
 
 .view-item-2 {
@@ -102,8 +104,79 @@ a {
 }
 
 .view-item-2 *{
-  background-color: green;
+  position: relative;
 }
+
+.view-item-2 article:nth-child(1){
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6), rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/canon-eos-m50-camera-photography-796x417.jpg') no-repeat center;
+  background-size: cover;
+}
+.view-item-2 article:nth-child(2){
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6), rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-796x417.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.view-header{
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.view-header ul{
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+}
+.view-header ul a{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.view-header ul a:hover{
+  color: white;
+}
+
+.view-header ul li{
+  display: flex;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.clock-icon{
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -128px -128px;
+  margin-right: 5px;
+}
+
+.share-icon{
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -880px -880px;
+  margin-right: 4px;
+}
+
+
+.view-header h2 a{
+  color: white;
+  font-size: 56px;
+}
+
+.view-item-2 .view-header h2 a{
+  font-size: 28px;
+}
+
+.view-date{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
+
+.view-logo{
+  position: absolute;
+  margin-top: 1vw;
+  left: 20px;
+  width: 40%;
+  height: 112px;
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg') no-repeat center;
+  background-size: contain;
+}
+
 
 .other-content {
 	margin: 0 auto;
@@ -121,6 +194,11 @@ h1 {
 	font-size: 28px;
 	font-weight: 700;
   line-height: 1.1;
+}
+
+h2{
+  margin-top: 8px;
+  margin-bottom: 14px;
 }
 
 h1 * {
@@ -174,6 +252,11 @@ h4 {
 	margin: -12px -12px 56px -12px;
 }
 
+.index-container > div{
+  height: 263px;
+  background-color: #fffaf8;
+}
+
 .top-bar-index-item {
 	position: relative;
 }
@@ -218,7 +301,7 @@ h4 {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  background-color: #fffaf8;
+  border-bottom: 1px solid#ffccc3;
 
 }
 
@@ -227,10 +310,22 @@ h4 {
   align-items: center;
   height: 22px;
   margin: 0 13px 6.5px 0;
+  font-size: 13px;
+  color: #555;
 }
 
 .icon-container a span{
   padding-left: 10px;
+}
+
+.extra-info{
+  padding: 10px 16px 16px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.extra-info a{
+  color: #555;
 }
 
 @media screen and (max-width: 1023px) {}
