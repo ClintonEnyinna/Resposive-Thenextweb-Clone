@@ -200,6 +200,39 @@ h4 {
 	padding: 10.6666666667px 16px 10.6666666667px 84px;
 }
 
+.icon{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-icon{
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -976px -976px;
+}
+
+.case-icon{
+  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -48px -48px;
+}
+
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #fffaf8;
+
+}
+
+.icon-container a{
+  display: flex;
+  align-items: center;
+  height: 22px;
+  margin: 0 13px 6.5px 0;
+}
+
+.icon-container a span{
+  padding-left: 10px;
+}
+
 @media screen and (max-width: 1023px) {}
 
 @media screen and (max-width: 767px) {}
