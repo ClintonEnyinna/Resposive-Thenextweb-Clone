@@ -82,7 +82,7 @@ a {
 
 .bottomNav,
 .bottomNav button {
-	z-index: 2;
+	z-index: 10;
 }
 
 .bottomNav li {
@@ -285,7 +285,7 @@ h6 {
 .index-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0 24px;
+  grid-gap: 0 24px;
   margin: 0 0 56px;
 }
 
@@ -697,6 +697,19 @@ body {
   overflow-x: visible;
 }  
 
+main {
+	padding-top: 90px;
+}
+
+.bottomNav {
+	position: relative;
+}
+
+.nav-bar {
+	position: fixed;
+	z-index: 10;
+}
+
 .nav-logo {
 	display: flex;  
   justify-content: center;
@@ -715,6 +728,60 @@ body {
 
 .nav-bar-content {
   width: calc(100vw - 106px);
+}
+
+.latest-news {
+	margin: 0;
+}
+
+.latest-news ul,
+.latest-deals ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 18px 18px;
+}
+
+.img-news {
+	height: 157px;
+}
+
+.latest-index header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.latest-index header h1 {
+	margin: 0;
+}
+
+.latest-index header span {
+	margin-top: 10px;
+}
+
+.index-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 24px;
+  margin: 0 0 56px;
+}
+
+.index-container div:nth-child(4) {
+	display: none;
+}
+
+.most-popular {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 48px 24px;
+  width: 100%;
+  height: auto;
+}
+
+.img-deals {
+	height: 234px;
 }
 
 }
