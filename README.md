@@ -15,7 +15,7 @@
 
 ## Description of the project 
 
->This purpose of this project is to clone The New Web website while implementing responsiveness using media queries. 
+>The purpose of this project is to clone The New Web website while implementing responsiveness using media queries. 
 
 ## Built with
 <ul>
