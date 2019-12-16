@@ -1,9 +1,8 @@
-* {
-  border: 2px solid black;
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-main{
+main {
   padding-top: 56px;
 }
 
@@ -20,7 +19,6 @@ a {
 }
 
 .topNav {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #131313;
   max-height: 32px;
   font-size: 13px;
@@ -51,7 +49,7 @@ a {
 
 .bottomNav {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  position: fixed;
+  position: absolute;
   height: 48px;
   font-size: 14px;
   letter-spacing: 0.04em;
@@ -79,7 +77,7 @@ a {
 .search-icon {
   width: 16px;
   height: 16px;
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
 }
 
 .main-view {
@@ -94,7 +92,13 @@ a {
 
 .view-item-1 {
   position: relative;
-  background: linear-gradient(to bottom right, rgba(255, 60, 1, 1), rgba(255, 66, 10, 0.6) 30%, rgba(14, 14, 14, 0.90) 70%, rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
+}
+
+.view-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 60, 1, 1), rgba(255, 66, 10, 0.6) 30%, rgba(14, 14, 14, 0.90) 70%, rgba(0, 0, 0, 1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
 }
 
 .view-item-2 {
@@ -103,209 +107,203 @@ a {
   grid-row-gap: 8px;
 }
 
-.view-item-2 *{
+.view-item-2 * {
   position: relative;
 }
 
-.view-item-2 article:nth-child(1){
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6), rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/canon-eos-m50-camera-photography-796x417.jpg') no-repeat center;
-  background-size: cover;
-}
-.view-item-2 article:nth-child(2){
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6), rgba(0,0,0,1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-796x417.jpg') no-repeat center;
+.view-item-2 article:nth-child(1) .view-link {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/canon-eos-m50-camera-photography-796x417.jpg') no-repeat center;
   background-size: cover;
 }
 
-.view-header{
+.view-item-2 article:nth-child(2) .view-link {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-796x417.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.view-header {
   position: absolute;
   left: 20px;
   bottom: 20px;
+  z-index: 1;
 }
 
-.view-header ul{
+.view-header ul {
   display: flex;
   color: rgba(255, 255, 255, 0.6);
 }
-.view-header ul a{
-  color: rgba(255, 255, 255, 0.6);
-}
 
-.view-header ul a:hover{
-  color: white;
-}
-
-.view-header ul li{
+.view-header ul li {
   display: flex;
   align-items: center;
   margin-right: 7px;
 }
 
-.clock-icon{
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -128px -128px;
+.clock-icon {
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -128px -128px;
   margin-right: 5px;
 }
 
-.share-icon{
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -880px -880px;
+.share-icon {
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -880px -880px;
   margin-right: 4px;
 }
 
-
-.view-header h2 a{
+.view-header h2 a {
   color: white;
   font-size: 56px;
 }
 
-.view-item-2 .view-header h2 a{
+.view-item-2 .view-header h2 a {
   font-size: 28px;
 }
 
-.view-date{
+.view-date {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 14px;
 }
 
-.view-logo{
+.view-logo {
   position: absolute;
   margin-top: 1vw;
+  top: 0;
   left: 20px;
   width: 40%;
   height: 112px;
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg') no-repeat center;
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg') no-repeat center;
   background-size: contain;
 }
 
-
 .other-content {
-	margin: 0 auto;
+  margin: 0 auto;
   max-width: 1192px;
   padding: 0 20px;
 }
 
 .latest-news {
-	padding: 84px 0 60px;
-	margin-bottom: 4em;
+  padding: 84px 0 60px;
+  margin-bottom: 4em;
 }
 
 h1 {
-	margin-bottom: 24px;
-	font-size: 28px;
-	font-weight: 700;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
   line-height: 1.1;
 }
 
-h2{
+h2 {
   margin-top: 8px;
   margin-bottom: 14px;
 }
 
 h1 * {
-	color: #f42;
+  color: #f42;
 }
 
 h4 {
-	font-size: 16px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .latest-news ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 24px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px 24px;
 }
 
 .img-news {
-	width: 270px;
-	height: 135px;
+  width: 100%;
+  height: 135px;
+  margin-bottom: 4px;
 }
 
 .timer {
-	padding-top: 4px;
-	color: #aaa;
+  padding-top: 4px;
+  color: #aaa;
 }
 
 .latest-index header {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .latest-index span a {
-	color: #f42;
+  color: #f42;
 }
 
 .latest-index span a:nth-child(1),
 .latest-index span a:nth-child(2) {
-	padding-right: 10px;
-	border-right: 1px solid #f42;
-	margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #f42;
+  margin-right: 10px;
 }
 
 .index-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 0 24px;
-	margin: -12px -12px 56px -12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 24px;
+  margin: -12px -12px 56px -12px;
 }
 
-.index-container > div{
+.index-container>div {
   height: 263px;
   background-color: #fffaf8;
 }
 
 .top-bar-index-item {
-	position: relative;
+  position: relative;
 }
 
 .top-bar-index-item img {
-	width: 60px;
-	height: 60px;
-	margin: 10.6666666667px;
-	position: absolute;
+  width: 60px;
+  height: 60px;
+  margin: 10.6666666667px;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
 }
 
-.top-bar-index-item > h4 {
-	background-color: #f42;
-	color: #fff;
+.top-bar-index-item>h4 {
+  background-color: #f42;
+  color: #fff;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
   font-size: 18px;
 }
 
 .top-bar-index-item div {
-	background-color: rgba(255,68,34,.08);
-	padding: 10.6666666667px 16px 10.6666666667px 84px;
+  background-color: rgba(255, 68, 34, .08);
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
 }
 
-.icon{
+.icon {
   display: inline-block;
   width: 16px;
   height: 16px;
 }
 
-.bookmark-icon{
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -976px -976px;
+.bookmark-icon {
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -976px -976px;
 }
 
-.case-icon{
-  background: transparent url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -48px -48px;
+.case-icon {
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -48px -48px;
 }
 
-.icon-container{
+.icon-container {
   display: flex;
   flex-direction: column;
   padding: 16px;
   border-bottom: 1px solid#ffccc3;
-
 }
 
-.icon-container a{
+.icon-container a {
   display: flex;
   align-items: center;
   height: 22px;
@@ -314,18 +312,194 @@ h4 {
   color: #555;
 }
 
-.icon-container a span{
+.icon-container a span {
   padding-left: 10px;
 }
 
-.extra-info{
+.extra-info {
   padding: 10px 16px 16px;
   font-size: 12px;
   line-height: 1.5;
 }
 
-.extra-info a{
+.extra-info a {
   color: #555;
+}
+
+.most-popular {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px 24px;
+  width: 100%;
+  height: auto;
+}
+
+.most-popular h1 a::after {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="%23F42" stroke-width="3" stroke-miterlimit="10" d="M4.75 1.5l6.5 6.5-6.5 6.5"/></svg>');
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
+.most-popular article {
+  position: relative;
+}
+
+.popular-link {
+  display: block;
+  width: 100%;
+  height: 276px;
+}
+
+.most-popular section:nth-of-type(1) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/image-2-368x276.png');
+}
+
+.most-popular section:nth-of-type(2) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/cheap-header-image-wonderboom2-368x276.png');
+}
+
+.most-popular section:nth-of-type(3) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-11-368x276.png');
+}
+
+.most-popular section:nth-of-type(4) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg');
+}
+
+.most-popular section:nth-of-type(5) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-368x276.png');
+}
+
+.most-popular section:nth-of-type(6) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/Untitled-design-5-368x276.jpg');
+}
+
+.most-popular section:nth-of-type(7) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg');
+}
+
+.most-popular section:nth-of-type(8) .popular-link{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/modernwarfarewatch2-368x276.png');
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png');
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.popular-header {
+  position: absolute;
+  bottom: 0;
+  padding: 14px;
+  color: white;
+  z-index: 2;
+}
+
+.popular-header h5,
+.latest-header h5 {
+  line-height: 19px;
+}
+
+.popular-header h5 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.popular-header h3{
+  margin-bottom: 6px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.popular-header h3 a {
+  color: white;
+  font-size: 20px;
+}
+
+.popular-header h3 a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.author{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.author a{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.author a:hover{
+  color: white;
+}
+
+.latest{
+  display: flex;
+  height: 96px;
+  background-color: rgba(255,68,34,.06);
+  margin: 2px 0;
+  font-size: 13px;
+}
+.latest-header{
+  padding: 10px 14px 0;
+  flex-basis: calc(100% - 96px);
+  color: #f42;
+}
+
+.latest-header h4 a{
+  color: #f42;
+  font-size: 14px;
+}
+
+.latest-header h4 a:hover{
+  border-bottom: 1px solid rgba(255,68,34,.2);
+}
+
+.latest > a{
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Twitter-compression.jpg') center/cover;
+  width: 96px;
+  height: 96px;
+}
+.headline{
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
+}
+
+.headline h4 a{
+  position: relative;
+  max-height: 50px;
+  display: block;
+  padding: 6px 0 6px 14px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 400;
+}
+
+.headline h4 a:hover{
+  color: #000;
+}
+
+.headline h4 a::before{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #f42;
+  left: 0;
+  top: 13px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1023px) {}
