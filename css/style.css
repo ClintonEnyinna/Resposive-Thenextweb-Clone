@@ -42,13 +42,43 @@ a {
   padding-right: 20px;
 }
 
-.topNav a,
-.top-footer li a {
+.bottomNav a {
+  color: #aaa;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-bottom: 1px solid#ffccc3;
+}
+
+.icon-container a {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  margin: 0 13px 6.5px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.extra-info a {
+  color: #555;
+}
+
+.author a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.bottomNav a {
-  color: #aaa;
+.latest > a {
+  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Twitter-compression.jpg') center/cover;
+  width: 96px;
+  height: 96px;
+}
+
+.topNav a,
+.top-footer li a {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .topNav ul,
@@ -60,6 +90,40 @@ a {
 .topNav li {
   margin-left: 12px;
   line-height: 32px;
+}
+
+.view-header h2 a {
+  color: white;
+  font-size: 56px;
+}
+
+.latest-index span a,
+.latest-deals span a {
+  color: #f42;
+}
+
+.popular-header h3 a {
+  color: white;
+  font-size: 20px;
+}
+
+.latest-header h4 a {
+  color: #f42;
+  font-size: 14px;
+}
+
+.headline h4 a {
+  position: relative;
+  max-height: 50px;
+  display: block;
+  padding: 6px 0 6px 14px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 400;
+}
+
+.author a:hover {
+  color: white;
 }
 
 .topNav li a:hover,
@@ -99,6 +163,7 @@ a {
 }
 
 .search-icon {
+  display: inline-block;
   width: 16px;
   height: 16px;
   background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -832px -832px;
@@ -114,6 +179,17 @@ a {
   color: white;
 }
 
+h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.main-view > h1 {
+  display: none;
+}
+
 .view-item-1 {
   position: relative;
 }
@@ -122,7 +198,11 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, rgba(255, 60, 1, 1), rgba(255, 66, 10, 0.6) 30%, rgba(14, 14, 14, 0.90) 70%, rgba(0, 0, 0, 1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
+  background: linear-gradient(to bottom right, rgba(255, 60, 1, 1), rgba(255, 66, 10, 0.6) 30%, rgba(14, 14, 14, 0.9) 70%, rgba(0, 0, 0, 1) 90%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
+}
+
+h1 * {
+  color: #f42;
 }
 
 .view-item-2 {
@@ -157,6 +237,11 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.top-footer li {
+  margin-right: 15px;
+  font-size: 11px;
+}
+
 .view-header ul li {
   display: flex;
   align-items: center;
@@ -171,11 +256,6 @@ a {
 .share-icon {
   background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -880px -880px;
   margin-right: 4px;
-}
-
-.view-header h2 a {
-  color: white;
-  font-size: 56px;
 }
 
 .view-item-2 .view-header h2 a {
@@ -212,20 +292,9 @@ a {
   margin-bottom: 4em;
 }
 
-h1 {
-  margin-bottom: 24px;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
 h2 {
   margin-top: 8px;
   margin-bottom: 14px;
-}
-
-h1 * {
-  color: #f42;
 }
 
 h4 {
@@ -246,7 +315,6 @@ h6 {
 .latest-deals ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 24px 24px;
 }
 
@@ -268,11 +336,6 @@ h6 {
   align-items: baseline;
 }
 
-.latest-index span a,
-.latest-deals span a {
-  color: #f42;
-}
-
 .latest-index span a:nth-child(1),
 .latest-index span a:nth-child(2) {
   padding-right: 10px;
@@ -287,7 +350,7 @@ h6 {
   margin: 0 0 56px;
 }
 
-.index-container>div {
+.index-container > div {
   height: 263px;
   background-color: #fffaf8;
 }
@@ -306,7 +369,7 @@ h6 {
   z-index: 2;
 }
 
-.top-bar-index-item>h4 {
+.top-bar-index-item > h4 {
   background-color: #f42;
   color: #fff;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
@@ -314,7 +377,7 @@ h6 {
 }
 
 .top-bar-index-item div {
-  background-color: rgba(255, 68, 34, .08);
+  background-color: rgba(255, 68, 34, 0.08);
   padding: 10.6666666667px 16px 10.6666666667px 84px;
 }
 
@@ -332,20 +395,9 @@ h6 {
   background: url('https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783') -48px -48px;
 }
 
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  border-bottom: 1px solid#ffccc3;
-}
-
-.icon-container a {
-  display: flex;
-  align-items: center;
-  height: 22px;
-  margin: 0 13px 6.5px 0;
-  font-size: 13px;
-  color: #555;
+.bottom-footer > span {
+  font-size: 100%;
+  color: #aaa;
 }
 
 .icon-container a span {
@@ -356,10 +408,6 @@ h6 {
   padding: 10px 16px 16px;
   font-size: 12px;
   line-height: 1.5;
-}
-
-.extra-info a {
-  color: #555;
 }
 
 .most-popular {
@@ -462,11 +510,6 @@ h6 {
   font-weight: 700;
 }
 
-.popular-header h3 a {
-  color: white;
-  font-size: 20px;
-}
-
 .popular-header h3 a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -475,18 +518,10 @@ h6 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.author a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.author a:hover {
-  color: white;
-}
-
 .latest {
   display: flex;
   height: 96px;
-  background-color: rgba(255, 68, 34, .06);
+  background-color: rgba(255, 68, 34, 0.06);
   margin: 2px 0;
   font-size: 13px;
 }
@@ -497,34 +532,13 @@ h6 {
   color: #f42;
 }
 
-.latest-header h4 a {
-  color: #f42;
-  font-size: 14px;
-}
-
 .latest-header h4 a:hover {
-  border-bottom: 1px solid rgba(255, 68, 34, .2);
-}
-
-.latest>a {
-  background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Twitter-compression.jpg') center/cover;
-  width: 96px;
-  height: 96px;
+  border-bottom: 1px solid rgba(255, 68, 34, 0.2);
 }
 
 .headline {
   line-height: 1.5;
   border-bottom: 1px solid #eee;
-}
-
-.headline h4 a {
-  position: relative;
-  max-height: 50px;
-  display: block;
-  padding: 6px 0 6px 14px;
-  font-size: 13px;
-  color: #555;
-  font-weight: 400;
 }
 
 .headline h4 a:hover {
@@ -588,7 +602,7 @@ footer {
   background: #131313;
 }
 
-.top-footer>div:nth-child(1) {
+.top-footer > div:nth-child(1) {
   display: flex;
   justify-content: center;
   height: 45px;
@@ -663,11 +677,6 @@ footer {
   display: block;
 }
 
-.top-footer li {
-  margin-right: 15px;
-  font-size: 11px;
-}
-
 .bottom-footer {
   height: 37.74%;
   padding: 39px 0;
@@ -683,11 +692,6 @@ footer {
   margin-right: 5px;
 }
 
-.bottom-footer>span {
-  font-size: 100%;
-  color: #aaa;
-}
-
 .love {
   color: #f42;
 }
@@ -696,14 +700,17 @@ footer {
   main {
     padding-top: 90px;
   }
+
   .bottomNav {
     position: relative;
   }
+
   .nav-bar {
     position: fixed;
     grid-template-columns: 106px 1fr;
-    z-index: 2;
+    z-index: 9999;
   }
+
   .nav-logo {
     display: flex;
     justify-content: center;
@@ -714,44 +721,55 @@ footer {
     background-position: 50%;
     background-size: cover;
   }
+
   .nav-logo img {
     height: 16px;
     width: 66px;
   }
+
   .nav-bar-content {
     width: 100%;
   }
+
   .latest-news {
     margin: 0;
   }
+
   .latest-news ul,
   .latest-deals ul {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 18px 18px;
   }
+
   .img-news {
     height: 157px;
   }
+
   .latest-index header {
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 24px;
   }
+
   .latest-index header h1 {
     margin: 0;
   }
+
   .latest-index header span {
     margin-top: 10px;
   }
+
   .index-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0 24px;
     margin: 0 0 56px;
   }
+
   .index-container div:nth-child(4) {
     display: none;
   }
+
   .most-popular {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -759,22 +777,28 @@ footer {
     width: 100%;
     height: auto;
   }
+
   .img-deals {
     height: 234px;
   }
+
   .view-link {
     background: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/12/Untitled-design20-796x417.png') no-repeat center/cover;
   }
+
   .view-header {
     left: 12px;
     bottom: 16px;
   }
+
   .view-header h2 a {
     font-size: 40px;
   }
+
   .view-item-2 .view-header h2 a {
     font-size: 20px;
   }
+
   .view-date,
   .view-logo {
     display: none;
@@ -791,6 +815,24 @@ footer {
   h2 {
     margin: 5px 0 10px;
   }
+
+  .topNav,
+  .bottomNav ul {
+    display: none;
+  }
+
+  .bottomNav button {
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    border-right: 1px solid #eee;
+    right: 0;
+  }
+
+  .nav-logo {
+    height: 48px;
+  }
+
   .main-view {
     display: grid;
     grid-template-columns: 1fr;
@@ -798,18 +840,37 @@ footer {
     height: 90vh;
     padding: 0 8px 8px;
   }
+
   .view-item-2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
   }
+
   .view-header {
     left: 12px;
     bottom: 12px;
   }
-  .view-header h2 a,
+
+  .view-header h2 a {
+    font-size: 20px;
+  }
+
+  .latest-news ul li a {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    height: 75px;
+  }
+
+  .latest-deals ul li a {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    height: 75px;
+  }
+
   .view-item-2 .view-header h2 a {
     font-size: 20px;
   }
+
   .latest-news ul,
   .latest-deals ul {
     grid-template-columns: 1fr;
@@ -822,26 +883,15 @@ footer {
     margin-bottom: 0;
   }
 
-  .latest-div{
+  .latest-div {
     height: 75px;
     padding-left: 13px;
   }
 
-  .latest-news ul li a{
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    height: 75px;
-  }
-
-  .latest-deals ul li a{
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    height: 75px;
-  }
-
-  .deals-ribbon{
+  .deals-ribbon {
     display: none;
   }
+
   .most-popular {
     grid-template-columns: 1fr;
     grid-gap: 48px 24px;
