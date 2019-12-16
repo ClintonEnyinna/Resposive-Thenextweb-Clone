@@ -247,8 +247,8 @@ h4 {
 .index-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 0 24px;
-  margin: -12px -12px 56px -12px;
+  gap: 0 24px;
+  margin: 0 0 56px;
 }
 
 .index-container>div {
