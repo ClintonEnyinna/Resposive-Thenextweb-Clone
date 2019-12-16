@@ -25,7 +25,7 @@
 
 ## 🏠 [Homepage](https://github.com/simoxsimo/Resposive-Thenextweb-Clone)
 
-## ⭐️ [Live demo](https://rawcdn.githack.com/simoxsimo/Resposive-Thenextweb-Clone/57568f7124ce040eca6470efa3a55bb9e12fa403/index.html)
+## ⭐️ [Live demo](https://simoxsimo.github.io/Resposive-Thenextweb-Clone/)
 
 ## Screenshot
 ![TheNewWeb](https://user-images.githubusercontent.com/57480558/70943613-2d201480-2049-11ea-80a4-3b445503b859.png)
