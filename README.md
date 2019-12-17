@@ -1,4 +1,4 @@
-<h1 align="center">[Responsive] The New Web - Website Clone</h1>
+<h1 align="center">[Responsive] The Next Web - Website Clone</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -15,7 +15,7 @@
 
 ## Description of the project 
 
->This purpose of this project is to clone The New Web website while implementing responsiveness using media queries. 
+>The purpose of this project is to clone The New Web website while implementing responsiveness using media queries. 
 
 ## Built with
 <ul>
